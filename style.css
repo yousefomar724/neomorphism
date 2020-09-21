@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eee;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 3px 3px 5px #111111,
+    -3px -3px 5px #dddddd;
+}
+
+.box:hover{
+    box-shadow: inset 3px 3px 5px #111111,
+    inset -3px -3px 5px #dddddd;
+}
